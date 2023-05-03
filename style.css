@@ -1,52 +1,55 @@
-.keyboard-container {
-    position: relative;
-  }
-  
-  .keyboard {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+.keybord{
+    box-shadow: -3px -3px 5px rgb(63, 63, 63) , 3px 3px 5px black;
+    width: 680px;
+    margin:200px auto 50px;
     display: flex;
     flex-direction: column;
-    background-color: #f2f2f2;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 10px;
+    align-items: center;
+    padding:20px 20px;
+    border-radius: 10px;
 }
-
-.keyboard-row {
-display: flex;
-justify-content: center;
+.row{
+    margin:5px ;
+    user-select: none;
 }
-
-.key {
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: 20px;
-width: 50px;
-height: 50px;
-margin: 5px;
-border-radius: 4px;
-background-color: #fff;
-box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-cursor: pointer;
+ button{
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    margin: 0 4px;
+    border: none;
+    background-color: transparent;
+    color:white;
+    box-shadow: -2px -2px 4px rgb(63, 63, 63) , 2px 2px 4px black;
+    border-radius: 5px;
+    cursor: pointer;
 }
-
-.key:hover {
-background-color: #ddd;
+.row4 , .backspace , .space{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-.key.letter {
-text-transform: uppercase;
+.keybord .backspace , .space{
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    /* user-select: none; */
 }
-
-.key.active {
-background-color: #ddd;
+.backspace , .space{
+    border-radius: 5px;
+    box-shadow: -2px -2px 4px rgb(63, 63, 63) , 2px 2px 4px black;
 }
-
-.key.active:hover {
-background-color: #ccc;
+.keybord .space{
+    width: 300px;
+    height: 50px;
+}
+.keybord .backspace {
+    width: 100px;
+    height: 50px;
+    margin-left: 15px;
+}
+.keybord .active{
+    box-shadow:inset -2px -2px 4px rgb(63, 63, 63) ,
+inset 2px 2px 4px black;
+    color: yellow;
 }
