@@ -1,55 +1,67 @@
-.keybord{
-    box-shadow: -3px -3px 5px rgb(63, 63, 63) , 3px 3px 5px black;
-    width: 680px;
-    margin:200px auto 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding:20px 20px;
-    border-radius: 10px;
+.keyboerd {
+    border: 1px solid slategray;
+    padding: 5px;
+    border-radius: 4px;
+    position: relative;
+    width: 700px;
+    
 }
-.row{
-    margin:5px ;
-    user-select: none;
+
+.line::after{
+        content: "";
+        display: block;
+        clear: both;
+
 }
- button{
-    width: 50px;
-    height: 50px;
-    font-weight: bold;
-    margin: 0 4px;
-    border: none;
-    background-color: transparent;
-    color:white;
-    box-shadow: -2px -2px 4px rgb(63, 63, 63) , 2px 2px 4px black;
-    border-radius: 5px;
+
+.key{
+    float: left;
+    width: 40px;
+    height: 40px;
+    border: 1px solid slateblue;
+    border-radius: 4px;
+    margin: 3px;
+    padding: 4px;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+.key:hover{
+    color: aliceblue;
+    background-color: slategray;
     cursor: pointer;
+
 }
-.row4 , .backspace , .space{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.key_backspace{
+    width: auto;
 }
-.keybord .backspace , .space{
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    /* user-select: none; */
+
+.TAB .CapsLock {
+    width: 60px;
+
 }
-.backspace , .space{
-    border-radius: 5px;
-    box-shadow: -2px -2px 4px rgb(63, 63, 63) , 2px 2px 4px black;
+.L_Shift{
+    width: 72px;
 }
-.keybord .space{
-    width: 300px;
-    height: 50px;
+.R_Shift{
+    width: 90px;
 }
-.keybord .backspace {
-    width: 100px;
-    height: 50px;
-    margin-left: 15px;
+
+.l_crtl .r_ctrl{
+    width: 69px;
 }
-.keybord .active{
-    box-shadow:inset -2px -2px 4px rgb(63, 63, 63) ,
-inset 2px 2px 4px black;
-    color: yellow;
+
+.space{
+    width: 248px;
+
+}
+.windows{
+    width: 20px;
+    padding-top: 5px;
+}
+.letter-key{
+    font-size: 10px;
+    line-height: 100%;
+
 }
