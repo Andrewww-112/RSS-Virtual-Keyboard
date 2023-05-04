@@ -1,10 +1,51 @@
+
+body{
+    font-family: 'Roboto',sans-serif;
+}
+.text-center{
+    text-align: center;
+}
+.container{
+    max-width: 1200px;
+    margin: 40px auto;
+
+}
+.left{
+    width: 70%;
+    float: left;
+
+}
+.right{
+    width: 30%;
+    float: left;
+}
+
+.h1{
+    margin-bottom: 40px;
+}
+
+.square{
+    width: 128px;
+    height: 128px;
+    float: left;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+}
+.contaniner-line::after{
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+
 .keyboerd {
     border: 1px solid slategray;
     padding: 5px;
     border-radius: 4px;
     position: relative;
     width: 700px;
-    
+
 }
 
 .line::after{
